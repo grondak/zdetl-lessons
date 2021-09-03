@@ -1,0 +1,12 @@
+{
+    "name": "zdetl-lessons",
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint",
+        "dev": "vite"
+    },
+    "dependencies": {
+        "axios": "^0.21.1"
+    }
+}
