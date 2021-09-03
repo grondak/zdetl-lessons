@@ -8,22 +8,22 @@ app.component('lesson-display', {
         <div>Lesson title: {{ name }} </div>
         <div><img v-bind:src="image"></div>
         <div>
-            <button class="button" v-on:click="firstLesson">
+            <button class="button" v-on:click="gotoFirstLesson">
                 <span class="material-icons-outlined">
                     first_page
                 </span>
             </button>
-            <button class="button" v-on:click="previousLesson">
+            <button class="button" v-on:click="gotoPreviousLesson">
                 <span class="material-icons-outlined">
                     chevron_left
                 </span>
             </button>
-            <button class="button" v-on:click="nextLesson">
+            <button class="button" v-on:click="gotoNextLesson">
                 <span class="material-icons-outlined">
                     chevron_right
                 </span>
             </button>
-            <button class="button" v-on:click="lastLesson">
+            <button class="button" v-on:click="gotoLastLesson">
                 <span class="material-icons-outlined">
                     last_page
                 </span>
@@ -38,7 +38,6 @@ app.component('lesson-display', {
     </div>`,
     data() {
         return {
-            lessonCount: 18,
             currentLesson: 0,
             lessonImageData: [
                 { lesson: "1. Stateroom", image: "AZ_139-2021_Stateroom.png" },
@@ -59,7 +58,6 @@ app.component('lesson-display', {
                 { lesson: "16. Colors", image: "AZ_162-2021_Numbers.png" },
                 { lesson: "17. Numbers", image: "AZ_161-2021_Numbers.png" },
                 { lesson: "18. Seasons", image: "AZ_164-2021_The_Seasons.png" },
-
             ],
             wordLessonData: [
                 {
@@ -1210,22 +1208,25 @@ app.component('lesson-display', {
 
             return array[index].lesson == this.lessonImageData[this.currentLesson].lesson;
         },
-        firstLesson() {
+        gotoFirstLesson() {
             this.currentLesson = 0;
         },
-        previousLesson() {
+        gotoPreviousLesson() {
             if(this.currentLesson > 0)
                 this.currentLesson -= 1;
         },
-        nextLesson() {
+        gotoNextLesson() {
             if(this.currentLesson < this.lessonCount -1 )
                 this.currentLesson += 1;
         },
-        lastLesson() {
+        gotoLastLesson() {
             this.currentLesson = this.lessonCount - 1;
         }
     },
     computed: {
+        lessonCount() {
+            return this.lessonImageData.length;
+        },
         name() {
             return this.lessonImageData[this.currentLesson].lesson;
         },
@@ -1233,9 +1234,7 @@ app.component('lesson-display', {
             return "assets/images/" + this.lessonImageData[this.currentLesson].image;
         },
         wordsForLesson() {
-            const result = this.wordLessonData.filter(this.lessonFilter)
-            return result;
-            
+            return this.wordLessonData.filter(this.lessonFilter)
         },
     }
 })
