@@ -1205,7 +1205,6 @@ app.component('lesson-display', {
     },
     methods: {
         lessonFilter(value, index, array) {
-
             return array[index].lesson == this.lessonImageData[this.currentLesson].lesson;
         },
         gotoFirstLesson() {
