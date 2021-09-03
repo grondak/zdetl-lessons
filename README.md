@@ -2,16 +2,20 @@
 A Vue.js application to help Tony learn Vue and Zdetl simultaneously
 
 ## Use
-1. Clone repo
-2. open index.html in zdetl-lessons
-3. Click buttons
+1. Install node.js
+2. Clone repo
+3. `cd zdetl-lessons`
+4. Install vite `npm install vite @vitejs/plugin-vue --save-dev`
+5. Start vite `npm run dev`
+6. Launch the site given by vite, which is almost always (http://localhost:3000)[http://localhost:3000]
+7. Learn Zdetl
 
 Search and hamburger menus do not yet function
 
 ## Thanks a bunch
 Thanks [Shawn Wildermuth](https://wildermuth.com/2021/01/10/Vite-for-Existing-Vue-CLI-Projects) for showing me how to add [Vite](https://vitejs.dev/) to existing projects
 
-Thanks to Rooney for showing me [how to load JSON with Fetch and Axios](https://howtocreateapps.com/vue-tutorial-json/#:~:text=%20Vue.js%3A%20Get%20and%20Display%20JSON%20Data%20with,we%20have%20created%20a%20simple%20component...%20More%20)
+Thanks to techinplanet for showing me [how to load JSON with Fetch and Axios](https://techinplanet.com/read-and-display-json-data-from-external-file-in-vue-js/)
 
 Thanks to Google for some [useful icons](https://fonts.google.com/icons)
 
