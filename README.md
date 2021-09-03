@@ -7,7 +7,7 @@ A Vue.js application to help Tony learn Vue and Zdetl simultaneously
 3. `cd zdetl-lessons`
 4. Install vite `npm install vite @vitejs/plugin-vue --save-dev`
 5. Start vite `npm run dev`
-6. Launch the site given by vite, which is almost always (http://localhost:3000)[http://localhost:3000]
+6. Launch the site given by vite, which is almost always [http://localhost:3000](http://localhost:3000)
 7. Learn Zdetl
 
 Search and hamburger menus do not yet function
@@ -19,4 +19,4 @@ Thanks to techinplanet for showing me [how to load JSON with Fetch and Axios](ht
 
 Thanks to Google for some [useful icons](https://fonts.google.com/icons)
 
-Thanks to Vue Mastery for their (Intro to Vue 3)[https://www.vuemastery.com/courses/intro-to-vue-3/intro-to-vue3] course.
+Thanks to Vue Mastery for their [Intro to Vue 3](https://www.vuemastery.com/courses/intro-to-vue-3/intro-to-vue3) course.
