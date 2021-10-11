@@ -1,0 +1,54 @@
+{
+  "paths": [
+    {
+      "name": "/lessonImageData",
+      "lambdaFunction": "zdetllessons9ff063c7",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/lessonImageData"
+    },
+    {
+      "name": "/wordLessonData",
+      "lambdaFunction": "zdetllessons7519ed39",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/wordLessonData"
+    }
+  ],
+  "resourceName": "lessonImageData",
+  "apiName": "lessonImageData",
+  "functionArns": [
+    {
+      "lambdaFunction": "zdetllessons9ff063c7"
+    },
+    {
+      "lambdaFunction": "zdetllessons7519ed39"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-zdetllessons-dev-111314-authRole",
+    "unAuthRoleName": "amplify-zdetllessons-dev-111314-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "zdetllessons9ff063c7",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    },
+    {
+      "category": "function",
+      "resourceName": "zdetllessons7519ed39",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
