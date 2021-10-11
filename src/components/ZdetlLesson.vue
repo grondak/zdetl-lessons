@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <div>Lesson title: {{ name }}</div>
-    <div><img v-bind:src="image" /></div>
+  <div id="lesson">
+    <div id="lessonTitle">Lesson title: {{ name }}</div>
+    <div id="lessonImage"><img v-bind:src="image" /></div>
     <div>
       <button class="button" v-on:click="gotoFirstLesson">
         <span class="material-icons-outlined"> first_page </span>
@@ -104,7 +104,11 @@ export default {
       return this.lessonImageData[this.currentLesson].lesson;
     },
     image() {
-      return this.publicPath + this.lessonImageData[this.currentLesson].image;
+      return (
+        this.publicPath +
+        "images/" +
+        this.lessonImageData[this.currentLesson].image
+      );
     },
     wordsForLesson() {
       return this.wordLessonData.filter(this.lessonFilter);

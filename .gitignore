@@ -21,6 +21,9 @@
 # Mono auto generated files
 mono_crash.*
 
+# Nightwatch results
+tests/e2e/reports/
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/

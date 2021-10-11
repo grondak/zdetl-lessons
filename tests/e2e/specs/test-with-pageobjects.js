@@ -13,12 +13,12 @@ module.exports = {
     const homepage = browser.page.homepage();
     homepage.waitForElementVisible("@appContainer");
 
-    const app = homepage.section.app;
-    app.assert.elementCount("@logo", 1);
-    app.expect.section("@welcome").to.be.visible;
-    app.expect
-      .section("@headline")
-      .text.to.match(/^Welcome to Your Vue\.js (.*)App$/);
+    //const app = homepage.section.app;
+    //app.assert.elementCount("@logo", 1);
+    //app.expect.section("@welcome").to.be.visible;
+    //app.expect
+    //  .section("@headline")
+    //  .text.to.match(/^Welcome to Your Vue\.js (.*)App$/);
 
     browser.end();
   },
@@ -27,10 +27,11 @@ module.exports = {
     browser
   ) => {
     const homepage = browser.page.homepage();
-    const welcomeSection = homepage.section.app.section.welcome;
+    homepage.waitForElementVisible("@appContainer");
+    //const welcomeSection = homepage.section.app.section.welcome;
 
-    welcomeSection.expect
-      .element("@cliPluginLinks")
-      .text.to.contain("e2e-nightwatch");
+    //welcomeSection.expect
+      //.element("@cliPluginLinks")
+      //.text.to.contain("e2e-nightwatch");
   },
 };
