@@ -7,10 +7,12 @@ A Vue.js application to help Tony learn Vue and Zdetl simultaneously
 3. `cd zdetl-lessons`
 4. Install vite `npm install vite @vitejs/plugin-vue --save-dev`
 5. Start vite `npm run dev`
-6. Launch the site given by vite, which is almost always [http://localhost:3000](http://localhost:3000)
+6. Launch the site given by vite, which is almost always [http://localhost:8080](http://localhost:8080)
 7. Learn Zdetl
 
-Search and hamburger menus do not yet function
+Search does not yet function
+
+Also working on uploading to [AWS amplify](https://dev.dyarslgvllg9j.amplifyapp.com/)
 
 ## Thanks a bunch
 Thanks [Shawn Wildermuth](https://wildermuth.com/2021/01/10/Vite-for-Existing-Vue-CLI-Projects) for showing me how to add [Vite](https://vitejs.dev/) to existing projects
