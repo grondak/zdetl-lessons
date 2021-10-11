@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <img class="imgLogo" src="images/ZLI-logo.jpeg" />
+    <img class="imgLogo" src="images/ZLI-logo.jpg" />
     <h1>The Zhodani Language & Cultural Institute (ZLI) presents:</h1>
     <br />
     <h1>Zdetl Lessons</h1>
