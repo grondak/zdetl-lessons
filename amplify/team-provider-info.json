@@ -1,31 +1,25 @@
 {
-  "dev": {
+  "staging": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-zdetllessons-dev-111314-authRole",
-      "UnauthRoleArn": "arn:aws:iam::119394751624:role/amplify-zdetllessons-dev-111314-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::119394751624:role/amplify-zdetllessons-dev-111314-authRole",
+      "AuthRoleName": "amplify-amplify3f652b0bb4484-staging-192924-authRole",
+      "UnauthRoleArn": "arn:aws:iam::119394751624:role/amplify-amplify3f652b0bb4484-staging-192924-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::119394751624:role/amplify-amplify3f652b0bb4484-staging-192924-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-zdetllessons-dev-111314-deployment",
-      "UnauthRoleName": "amplify-zdetllessons-dev-111314-unauthRole",
-      "StackName": "amplify-zdetllessons-dev-111314",
-      "StackId": "arn:aws:cloudformation:us-east-1:119394751624:stack/amplify-zdetllessons-dev-111314/c2c5dc00-2aa5-11ec-8d72-12bffa6a4ee9",
-      "AmplifyAppId": "dyarslgvllg9j"
+      "DeploymentBucketName": "amplify-amplify3f652b0bb4484-staging-192924-deployment",
+      "UnauthRoleName": "amplify-amplify3f652b0bb4484-staging-192924-unauthRole",
+      "StackName": "amplify-amplify3f652b0bb4484-staging-192924",
+      "StackId": "arn:aws:cloudformation:us-east-1:119394751624:stack/amplify-amplify3f652b0bb4484-staging-192924/86582be0-38ee-11ec-995f-0a6164463715",
+      "AmplifyAppId": "d2bvfcglskb7qu"
     },
     "categories": {
       "function": {
         "zdetllessons9ff063c7": {
-          "deploymentBucketName": "amplify-zdetllessons-dev-111314-deployment",
-          "s3Key": "amplify-builds/zdetllessons9ff063c7-7a577369703369463966-build.zip"
+          "deploymentBucketName": "amplify-amplify3f652b0bb4484-staging-192924-deployment",
+          "s3Key": "amplify-builds/zdetllessons9ff063c7-6579413577424b66504b-build.zip"
         },
         "zdetllessons7519ed39": {
-          "deploymentBucketName": "amplify-zdetllessons-dev-111314-deployment",
-          "s3Key": "amplify-builds/zdetllessons7519ed39-502f717357712f387975-build.zip"
-        }
-      },
-      "hosting": {
-        "amplifyhosting": {
-          "appId": "dyarslgvllg9j",
-          "type": "manual"
+          "deploymentBucketName": "amplify-amplify3f652b0bb4484-staging-192924-deployment",
+          "s3Key": "amplify-builds/zdetllessons7519ed39-426d56575868316e7862-build.zip"
         }
       }
     }

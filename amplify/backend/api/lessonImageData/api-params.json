@@ -30,8 +30,8 @@
   "privacy": {
     "auth": 0,
     "unauth": 0,
-    "authRoleName": "amplify-zdetllessons-dev-111314-authRole",
-    "unAuthRoleName": "amplify-zdetllessons-dev-111314-unauthRole"
+    "authRoleName": "amplify-amplify3f652b0bb4484-staging-192924-authRole",
+    "unAuthRoleName": "amplify-amplify3f652b0bb4484-staging-192924-unauthRole"
   },
   "dependsOn": [
     {

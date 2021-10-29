@@ -71,12 +71,12 @@ export default {
         // Parse JSON string into object
         var data = JSON.parse(response);
         that.lessonImageData = data.lessonImageData;
-      }, "https://eooio56v95.execute-api.us-east-1.amazonaws.com/dev/lessonImageData");
+      }, "https://8iphf1bkjc.execute-api.us-east-1.amazonaws.com/staging/lessonImageData");
       that.loadJSON(function (response) {
         // Parse JSON string into object
         var data = JSON.parse(response);
         that.wordLessonData = data.wordLessonData;
-      }, "https://eooio56v95.execute-api.us-east-1.amazonaws.com/dev/wordLessonData");
+      }, "https://8iphf1bkjc.execute-api.us-east-1.amazonaws.com/staging/wordLessonData");
     },
     lessonFilter(value, index, array) {
       return (
