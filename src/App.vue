@@ -5,6 +5,8 @@
     <router-link to="/search"
       ><span class="material-icons-outlined md-24">search</span></router-link
     >
+    |
+    <router-link to="/signuporin">Sign Up or Sign In</router-link>
   </div>
   <router-view />
 </template>
