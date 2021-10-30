@@ -15,12 +15,15 @@
       "function": {
         "zdetllessons9ff063c7": {
           "deploymentBucketName": "amplify-amplify3f652b0bb4484-staging-192924-deployment",
-          "s3Key": "amplify-builds/zdetllessons9ff063c7-6579413577424b66504b-build.zip"
+          "s3Key": "amplify-builds/zdetllessons9ff063c7-562b51304b5778474645-build.zip"
         },
         "zdetllessons7519ed39": {
           "deploymentBucketName": "amplify-amplify3f652b0bb4484-staging-192924-deployment",
-          "s3Key": "amplify-builds/zdetllessons7519ed39-426d56575868316e7862-build.zip"
+          "s3Key": "amplify-builds/zdetllessons7519ed39-4848386c544157557753-build.zip"
         }
+      },
+      "auth": {
+        "zdetllessons3624e588": {}
       }
     }
   }
