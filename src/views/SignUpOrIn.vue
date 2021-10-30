@@ -6,6 +6,9 @@
       <div class="formComplaint" v-if="badFormData">
         At least one field is blank.<br />
       </div>
+      <div class="formComplaint" v-if="passwordsDontMatch">
+        Passwords didn't match<br />
+      </div>
       <div class="signupFormFields">
         <label for="username">Username:</label>
         <input id="username" v-model="username" />
@@ -39,6 +42,7 @@ export default {
       email: "",
       phoneNumber: "",
       badFormData: false,
+      passwordsDontMatch: false,
     };
   },
   methods: {
@@ -51,6 +55,7 @@ export default {
     },
     onSubmit() {
       this.badFormData = false;
+      this.passwordsDontMatch = false;
       if (
         this.username === "" ||
         this.password === "" ||
@@ -58,14 +63,14 @@ export default {
         this.email === "" ||
         this.phoneNumber === ""
       ) {
-        alert("Please fill in all fields");
         this.badFormData = true;
+        return;
       }
       if (this.password != this.secondPassword) {
-        alert("Passwords do not match");
         this.password = "";
         this.secondPassword = "";
-        this.badFormData = true;
+        this.passwordsDontMatch = true;
+        return;
       }
       alert(
         "Username:  " +
