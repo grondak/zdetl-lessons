@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Search from "../views/Search.vue";
 import SignUpOrIn from "../views/SignUpOrIn.vue";
+import Manager from "../views/Manager.vue";
 
 const routes = [
   {
@@ -28,6 +29,11 @@ const routes = [
     path: "/signuporin",
     name: "SignUpOrIn",
     component: SignUpOrIn,
+  },
+  {
+    path: "/manager",
+    name: "Manager",
+    component: Manager,
   },
 ];
 
